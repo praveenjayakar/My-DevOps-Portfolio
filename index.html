@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Praveen Guntu</h1>
-        <p>DevOps Engineer | Docker | Kubernetes | CI/CD | Cloud | Automation</p>
+        <p>DevOps Engineer | Kubernetes | CI/CD | Cloud | Automation</p>
     </header>
     
     <nav>
@@ -22,48 +22,27 @@
         </ul>
     </nav>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a **DevOps Engineer** with **5 years of experience**, working on **monolithic and microservices architectures**. I specialize in **Kubernetes, CI/CD automation, cloud infrastructure, and DevOps security**. I have extensive experience deploying applications using **self-managed Kubernetes clusters (kubeadm), managed Kubernetes (EKS, AKS), and Istio service mesh**. </p>
-        <p>My expertise includes setting up **private artifact repositories (Nexus, JFrog Artifactory)**, creating **multi-stage Docker builds**, and securing containers using **best practices (running non-root users, least privilege access, and security scanning with SonarQube, Fortify, and Black Duck)**.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a <strong>DevOps Engineer</strong> with <strong>5 years of experience</strong>, working on <strong>monolithic and microservices architectures</strong>. I specialize in <strong>Kubernetes, CI/CD automation, cloud infrastructure, and DevOps security</strong>.</p>
+        </section>
     
-    <section id="skills">
-        <h2>Skills & Technologies</h2>
-        <ul>
-            <li><strong>Languages:</strong> Java, Python, Node.js, React, PHP (Drupal), .NET</li>
-            <li><strong>CI/CD & Automation:</strong> Git, Jenkins, GitHub Actions, Azure DevOps, Bash scripting</li>
-            <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm, Istio, Nginx Ingress</li>
-            <li><strong>Cloud & Infrastructure:</strong> AWS, Azure, Linux & Windows administration</li>
-            <li><strong>Monitoring & Logging:</strong> ELK Stack, Prometheus, Grafana, Loki, Elastic APM</li>
-            <li><strong>Security & DevSecOps:</strong> SonarQube, Fortify, Black Duck</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Automated CI/CD Pipelines:</strong> Implemented multi-stage pipelines using Jenkins, GitHub Actions, and Azure DevOps.</li>
-            <li><strong>Kubernetes Cluster Management:</strong> Built and managed self-hosted and cloud Kubernetes clusters.</li>
-            <li><strong>Service Mesh Implementation:</strong> Deployed and optimized Istio for microservices security and observability.</li>
-            <li><strong>Application Monitoring:</strong> Integrated ELK Stack, Prometheus, and Elastic APM for system and service monitoring.</li>
-        </ul>
-    </section>
-    
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>AWS Certified Solutions Architect</li>
-            <li>Certified Kubernetes Administrator (CKA)</li>
-            <li>Azure DevOps Engineer Expert</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <ul>
+                <li><strong>Languages:</strong> Java, Python, Node.js, React, PHP (Drupal), .NET</li>
+                <li><strong>CI/CD & Automation:</strong> Git, Jenkins, GitHub Actions, Azure DevOps, Bash scripting</li>
+                <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm, Istio, Nginx Ingress</li>
+            </ul>
+        </section>
+    </main>
     
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: praveenguntu@hotmail.com</p>
-        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/praveenguntu" target="_blank">linkedin.com/in/praveenguntu</a></p>
+        <p>GitHub: <a href="https://github.com/praveenjayakar" target="_blank">github.com/praveenjayakar</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/praveen-guntu-51163297" target="_blank">linkedin.com/in/praveen-guntu-51163297</a></p>
     </section>
     
     <footer>
@@ -72,6 +51,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("year").textContent = new Date().getFullYear();
             const navLinks = document.querySelectorAll("nav ul li a");
             navLinks.forEach(link => {
                 link.addEventListener("click", function(event) {
@@ -80,54 +60,62 @@
                     section.scrollIntoView({ behavior: "smooth" });
                 });
             });
-            document.getElementById("year").textContent = new Date().getFullYear();
         });
     </script>
 
     <style>
-        body {
-            font-family: 'Courier New', monospace;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background: black;
-            color: #00ff00;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: black;
+            color: #0f0;
+            text-align: center;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
         header {
-            text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             font-size: 24px;
         }
         nav ul {
             list-style: none;
-            padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
             background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
         }
         nav ul li {
-            display: inline;
-            margin: 15px;
+            margin: 10px;
         }
         nav ul li a {
-            color: #00ff00;
+            color: #0f0;
             text-decoration: none;
             font-size: 18px;
         }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+        }
         section {
-            padding: 50px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            margin: 20px;
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 20px auto;
             border-radius: 10px;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
-        }
-        ul {
-            text-align: left;
-            display: inline-block;
+            background: rgba(0, 0, 0, 0.9);
         }
     </style>
 </body>

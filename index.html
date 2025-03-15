@@ -1,58 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praveen Guntu | DevOps Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Guntu | DevOps Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Praveen Guntu</h1>
-    <p>DevOps Engineer | Cloud | Automation | CI/CD</p>
-  </header>
+    <header>
+        <h1>Praveen Guntu</h1>
+        <p>DevOps Engineer | Docker | Kubernetes | CI/CD | Cloud | Automation</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a **DevOps Engineer** with **5 years of experience**, working on **monolithic and microservices architectures**. I specialize in **Kubernetes, CI/CD automation, cloud infrastructure, and DevOps security**. I have extensive experience deploying applications using **self-managed Kubernetes clusters (kubeadm), managed Kubernetes (EKS, AKS), and Istio service mesh**. </p>
+        <p>My expertise includes setting up **private artifact repositories (Nexus, JFrog Artifactory)**, creating **multi-stage Docker builds**, and securing containers using **best practices (running non-root users, least privilege access, and security scanning with SonarQube, Fortify, and Black Duck)**.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+            <li><strong>Languages:</strong> Java, Python, Node.js, React, PHP (Drupal), .NET</li>
+            <li><strong>CI/CD & Automation:</strong> Git, Jenkins, GitHub Actions, Azure DevOps, Bash scripting</li>
+            <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm, Istio, Nginx Ingress</li>
+            <li><strong>Cloud & Infrastructure:</strong> AWS, Azure, Linux & Windows administration</li>
+            <li><strong>Monitoring & Logging:</strong> ELK Stack, Prometheus, Grafana, Loki, Elastic APM</li>
+            <li><strong>Security & DevSecOps:</strong> SonarQube, Fortify, Black Duck</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Automated CI/CD Pipelines:</strong> Implemented multi-stage pipelines using Jenkins, GitHub Actions, and Azure DevOps.</li>
+            <li><strong>Kubernetes Cluster Management:</strong> Built and managed self-hosted and cloud Kubernetes clusters.</li>
+            <li><strong>Service Mesh Implementation:</strong> Deployed and optimized Istio for microservices security and observability.</li>
+            <li><strong>Application Monitoring:</strong> Integrated ELK Stack, Prometheus, and Elastic APM for system and service monitoring.</li>
+        </ul>
+    </section>
+    
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Solutions Architect</li>
+            <li>Certified Kubernetes Administrator (CKA)</li>
+            <li>Azure DevOps Engineer Expert</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: praveenguntu@hotmail.com</p>
+        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/praveenguntu" target="_blank">linkedin.com/in/praveenguntu</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> Praveen Guntu | DevOps Portfolio</p>
+    </footer>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello, I'm <strong>Praveen Guntu</strong>, a DevOps Engineer specializing in automation, cloud solutions, and CI/CD. I am passionate about optimizing software development workflows and ensuring high availability of applications.</p>
-  </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll("nav ul li a");
+            navLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    const section = document.querySelector(this.getAttribute("href"));
+                    section.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+            document.getElementById("year").textContent = new Date().getFullYear();
+        });
+    </script>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Kubernetes</li>
-      <li>Terraform</li>
-      <li>Docker</li>
-      <li>Jenkins</li>
-      <li>Azure DevOps</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Cloud Infrastructure Automation</h3>
-      <p>Automated AWS infrastructure provisioning using Terraform, ensuring efficient and reproducible deployments.</p>
-    </div>
-    <div class="project">
-      <h3>CI/CD Pipeline Optimization</h3>
-      <p>Redesigned a CI/CD pipeline using Jenkins and GitHub Actions, reducing deployment time by 40%.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:PraveenGuntu@hotmail.com">PraveenGuntu@hotmail.com</a></p>
-    <p>Website: <a href="https://pjdevops.com">pjdevops.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; <span id="year"></span> Praveen Guntu. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: #00ff00;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        nav ul li {
+            display: inline;
+            margin: 15px;
+        }
+        nav ul li a {
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
 </body>
 </html>
-

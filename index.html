@@ -5,6 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praveen Guntu | DevOps Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('cool-sea-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #222;
+            text-align: center;
+            max-width: 100vw;
+            overflow-x: hidden;
+            position: relative;
+        }
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('devops-logo.png') no-repeat center center;
+            background-size: 150px;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        header {
+            padding: 30px;
+            font-size: 26px;
+            position: relative;
+            color: #004d99;
+            z-index: 1;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin: 20px auto;
+            width: fit-content;
+            position: relative;
+            z-index: 1;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+        nav ul li a {
+            color: #004d99;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #00264d;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            position: relative;
+            z-index: 1;
+        }
+        section {
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #004d99;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: transparent;
+            position: relative;
+            z-index: 1;
+            color: #004d99;
+        }
+        .resume-btn {
+            background: #004d99;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .resume-btn:hover {
+            background: #00264d;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,6 +124,7 @@
         <section id="about">
             <h2>About Me</h2>
             <p>I'm a <strong>DevOps Engineer</strong> with <strong>5 years of experience</strong>, working on <strong>monolithic and microservices architectures</strong>. I specialize in <strong>Kubernetes, CI/CD automation, cloud infrastructure, and DevOps security</strong>.</p>
+            <a href="Praveen_Guntu_Resume.pdf" class="resume-btn" download>Download Resume</a>
         </section>
     
         <section id="skills">
@@ -34,6 +133,24 @@
                 <li><strong>Languages:</strong> Java, Python, Node.js, React, PHP (Drupal), .NET</li>
                 <li><strong>CI/CD & Automation:</strong> Git, Jenkins, GitHub Actions, Azure DevOps, Bash scripting</li>
                 <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm, Istio, Nginx Ingress</li>
+            </ul>
+        </section>
+    
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Kubernetes Cluster Automation:</strong> Automated Kubernetes deployments using Helm and GitOps.</li>
+                <li><strong>CI/CD Pipeline for Microservices:</strong> Built end-to-end CI/CD pipelines for a microservices architecture.</li>
+                <li><strong>Cloud Cost Optimization:</strong> Implemented autoscaling and monitoring to reduce cloud infrastructure costs.</li>
+            </ul>
+        </section>
+    
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified Kubernetes Administrator (CKA)</li>
+                <li>AWS Certified Solutions Architect - Associate</li>
+                <li>Azure DevOps Engineer Expert</li>
             </ul>
         </section>
     </main>
@@ -62,61 +179,5 @@
             });
         });
     </script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Courier New', monospace;
-            background-color: black;
-            color: #0f0;
-            text-align: center;
-            max-width: 100vw;
-            overflow-x: hidden;
-        }
-        header {
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.9);
-            font-size: 24px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-        }
-        nav ul li {
-            margin: 10px;
-        }
-        nav ul li a {
-            color: #0f0;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 80vh;
-        }
-        section {
-            width: 90%;
-            max-width: 800px;
-            padding: 40px;
-            background: rgba(0, 0, 0, 0.8);
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.9);
-        }
-    </style>
 </body>
 </html>

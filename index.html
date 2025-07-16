@@ -4,92 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
   <title>Praveen Guntu | DevOps Engineer</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f4f4f4;
-    }
-
-    header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #00ffd5;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #ccc;
-    }
-
-    .contact a {
-      color: #00ffd5;
-      text-decoration: none;
-      margin: 0 0.5rem;
-      font-weight: 600;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    section {
-      margin-bottom: 2.5rem;
-    }
-
-    h2 {
-      border-bottom: 2px solid #00ffd5;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      color: #00ffd5;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background: rgba(0, 0, 0, 0.4);
-    }
-
-    footer a {
-      color: #00ffd5;
-      text-decoration: none;
-    }
-  </style>
 </head>
 
 <body>
   <header>
     <div class="container">
       <h1>Praveen Guntu</h1>
-      <p>DevOps Engineer | Cloud | Kubernetes | CI/CD | Terraform</p>
+      <p class="tagline">DevOps Engineer | Cloud | Kubernetes | CI/CD | Terraform</p>
       <div class="contact">
         <a href="mailto:praveenguntu@outlook.com">Email</a> |
         <a href="https://pjdevops.com" target="_blank">Portfolio</a> |
         <a href="https://linkedin.com/in/praveen-guntu-51163297" target="_blank">LinkedIn</a> |
-        <span>+91 6360192648</span>
+        +91 6360192648
       </div>
     </div>
   </header>
@@ -97,24 +27,25 @@
   <main class="container">
     <section>
       <h2>Objective</h2>
-      <p>DevOps Engineer with 3+ years of experience in automating deployments, CI/CD pipelines, container orchestration, cloud infrastructure, observability, and legacy modernization. Skilled in delivering scalable, secure, and observable systems for monolithic and microservices architectures.</p>
+      <p>
+        DevOps Engineer with 3+ years of experience in automating deployments, CI/CD pipelines, container orchestration,
+        cloud infrastructure, observability, and legacy modernization. Skilled in delivering scalable, secure, and
+        observable systems for monolithic and microservices architectures.
+      </p>
     </section>
 
     <section>
       <h2>Skills</h2>
       <ul>
-        <li><strong>CI/CD:</strong> Azure DevOps, Jenkins, Git, GitHub, Azure Repos, SonarQube, Trivy, Helm, Kubernetes manifests</li>
-        <li><strong>Containers:</strong> Docker, Kubernetes + Helm</li>
-        <li><strong>Databases:</strong> MySQL, Oracle, MongoDB, Redis</li>
-        <li><strong>Service Mesh:</strong> NGINX Ingress Controller, Istio</li>
-        <li><strong>Build Tools:</strong> Maven, Ant, Gradle, npm, MSBuild, pip, Composer, Docker buildx</li>
-        <li><strong>IaC:</strong> Terraform</li>
-        <li><strong>Registries:</strong> Nexus, JFrog, ECR</li>
-        <li><strong>Monitoring:</strong> Prometheus, Grafana, ELK, Fluentd, Loki, promtail, node exporter</li>
-        <li><strong>Config Management:</strong> Ansible</li>
-        <li><strong>Web Servers & OS:</strong> NGINX, Tomcat, Apache, Linux (advanced), Windows (intermediate)</li>
-        <li><strong>Scripting:</strong> Bash, Python (basic)</li>
+        <li><strong>CI/CD:</strong> Azure DevOps, Jenkins, Git, GitHub, Azure Repos, SonarQube, Trivy, Helm</li>
+        <li><strong>Containers:</strong> Docker, Kubernetes (EKS, AKS, kubeadm), Helm, Kubernetes manifests</li>
         <li><strong>Cloud:</strong> AWS (EC2, VPC, EKS, IAM, Route53, S3, Load Balancer, ACM, Secrets Manager, Auto Scaling)</li>
+        <li><strong>IaC & Config Mgmt:</strong> Terraform, Ansible</li>
+        <li><strong>Monitoring:</strong> Prometheus, Grafana, Fluentd, Loki, ELK Stack, APM</li>
+        <li><strong>Build Tools:</strong> Maven, Gradle, Ant, pip, npm, Composer, Docker buildx</li>
+        <li><strong>Service Mesh:</strong> Istio, NGINX Ingress Controller</li>
+        <li><strong>Databases:</strong> MySQL, Oracle, MongoDB, Redis</li>
+        <li><strong>Other:</strong> Linux, Windows, Bash, basic Python, NGINX, Tomcat, Apache</li>
       </ul>
     </section>
 
@@ -122,13 +53,12 @@
       <h2>Experience</h2>
       <h3>DevOps Engineer – Jio Platforms, Bengaluru (Aug 2022 – Present)</h3>
       <ul>
-        <li>Built and maintained CI/CD pipelines for 50+ microservices using Azure DevOps, Docker, Helm on Kubernetes (Kubeadm, EKS, AKS)</li>
-        <li>Implemented probes, resource limits, HPA for high availability deployments</li>
-        <li>Automated infrastructure using Terraform with S3 + DynamoDB locking</li>
-        <li>Setup observability using Prometheus, Grafana, ELK Stack, Fluentd, APM</li>
-        <li>Handled issues like image pull failures, misconfigured volumes, affinity rules</li>
-        <li>Managed TLS, NGINX routing, and reverse proxy with OpenSSL and certs</li>
-        <li>Supported legacy app CI/CD for .NET, PHP, Java on NGINX, Tomcat</li>
+        <li>Built and maintained CI/CD pipelines for 50+ microservices using Azure DevOps, Docker, Helm, and Kubernetes (EKS, AKS, kubeadm).</li>
+        <li>Automated infrastructure using Terraform (S3 + DynamoDB for remote state locking).</li>
+        <li>Integrated observability with Prometheus, Grafana, ELK, Fluentd, and APM tools.</li>
+        <li>Managed SSL/TLS termination, reverse proxy setup using NGINX, Istio gateways.</li>
+        <li>Handled production issues like image pull failures, node scheduling, and pod disruptions.</li>
+        <li>Supported legacy monoliths in .NET, PHP, Java with CI/CD using Bash, PowerShell, Python scripts.</li>
       </ul>
     </section>
 
@@ -136,25 +66,24 @@
       <h2>Projects</h2>
       <h3>CI/CD Platform for Retail Microservices (CWMS)</h3>
       <ul>
-        <li>Built GitOps pipelines with Helm and Docker multistage builds (Alpine/distroless)</li>
-        <li>Integrated SonarQube, Trivy for secure DevSecOps workflows</li>
-        <li>Managed Helm charts, ingress rules, TLS secrets, Istio gateway/virtual service</li>
-        <li>Enabled Kubernetes dashboards, Istio observability, and monitoring setup</li>
-        <li>Delivered consistent deployments with zero-downtime rolling upgrades</li>
+        <li>Designed and deployed GitOps-based CI/CD pipelines with Helm, Azure DevOps, and multistage Docker builds using Alpine & distroless images.</li>
+        <li>Enforced DevSecOps with SonarQube and Trivy scanning, used JFrog for artifact versioning and rollback.</li>
+        <li>Created shared Helm charts, ingress rules, and Istio gateway configurations to standardize deployments across environments.</li>
+        <li>Provided seamless observability using dashboards for developer self-service access to logs and metrics.</li>
       </ul>
 
       <h3>Legacy App Modernization – Partner Onboarding System</h3>
       <ul>
-        <li>Migrated monoliths (.NET, Java, PHP) into Azure DevOps CI/CD flows</li>
-        <li>Automated VM deployments with config separation and env awareness</li>
-        <li>Enabled ELK and APM for real-time visibility and log-based debugging</li>
-        <li>Initiated containerization with Docker for Kubernetes transition</li>
+        <li>Re-engineered monolithic Java, .NET, and PHP apps into automated Azure DevOps CI/CD pipelines.</li>
+        <li>Enabled deployments across Linux and Windows VMs, with environment-aware scripting.</li>
+        <li>Integrated ELK stack for logging and performance tracking; initiated containerization for Kubernetes migration.</li>
+        <li>Reduced deployment time by 80% and improved system reliability and visibility significantly.</li>
       </ul>
     </section>
 
     <section>
       <h2>Education</h2>
-      <p><strong>Bachelor of Technology (B.Tech)</strong> — CE (2020)<br>
+      <p><strong>Bachelor of Technology (B.Tech)</strong> — Computer Engineering (2020)<br />
         Sanketika Institute of Technology and Management, Visakhapatnam</p>
     </section>
   </main>

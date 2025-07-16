@@ -1,4 +1,3 @@
-<!-- index.html - DevOps Engineer Portfolio Website -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +7,77 @@
   <title>Praveen Guntu | DevOps Engineer</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f4f4f4;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00ffd5;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .contact a {
+      color: #00ffd5;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #00ffd5;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #00ffd5;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    footer a {
+      color: #00ffd5;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,10 +86,10 @@
       <h1>Praveen Guntu</h1>
       <p>DevOps Engineer | Cloud | Kubernetes | CI/CD | Terraform</p>
       <div class="contact">
-        <a href="mailto:praveenguntu@outlook.com">praveenguntu@outlook.com</a> | 
-        <a href="https://pjdevops.com" target="_blank">pjdevops.com</a> | 
-        <a href="https://linkedin.com/in/praveen-guntu-51163297" target="_blank">LinkedIn</a> | 
-        +91 6360192648
+        <a href="mailto:praveenguntu@outlook.com">Email</a> |
+        <a href="https://pjdevops.com" target="_blank">Portfolio</a> |
+        <a href="https://linkedin.com/in/praveen-guntu-51163297" target="_blank">LinkedIn</a> |
+        <span>+91 6360192648</span>
       </div>
     </div>
   </header>
@@ -40,7 +110,7 @@
         <li><strong>Build Tools:</strong> Maven, Ant, Gradle, npm, MSBuild, pip, Composer, Docker buildx</li>
         <li><strong>IaC:</strong> Terraform</li>
         <li><strong>Registries:</strong> Nexus, JFrog, ECR</li>
-        <li><strong>Monitoring & Logging:</strong> Prometheus, Grafana, ELK, Fluentd, Loki, promtail, node exporter</li>
+        <li><strong>Monitoring:</strong> Prometheus, Grafana, ELK, Fluentd, Loki, promtail, node exporter</li>
         <li><strong>Config Management:</strong> Ansible</li>
         <li><strong>Web Servers & OS:</strong> NGINX, Tomcat, Apache, Linux (advanced), Windows (intermediate)</li>
         <li><strong>Scripting:</strong> Bash, Python (basic)</li>
@@ -69,15 +139,16 @@
         <li>Built GitOps pipelines with Helm and Docker multistage builds (Alpine/distroless)</li>
         <li>Integrated SonarQube, Trivy for secure DevSecOps workflows</li>
         <li>Managed Helm charts, ingress rules, TLS secrets, Istio gateway/virtual service</li>
-        <li>Enabled K8s dashboards and observability for developers</li>
+        <li>Enabled Kubernetes dashboards, Istio observability, and monitoring setup</li>
+        <li>Delivered consistent deployments with zero-downtime rolling upgrades</li>
       </ul>
 
       <h3>Legacy App Modernization – Partner Onboarding System</h3>
       <ul>
         <li>Migrated monoliths (.NET, Java, PHP) into Azure DevOps CI/CD flows</li>
-        <li>Automated VM deployments with environment variables & config separation</li>
-        <li>Enabled log monitoring and APM for performance analysis</li>
-        <li>Initiated containerization for Kubernetes transition</li>
+        <li>Automated VM deployments with config separation and env awareness</li>
+        <li>Enabled ELK and APM for real-time visibility and log-based debugging</li>
+        <li>Initiated containerization with Docker for Kubernetes transition</li>
       </ul>
     </section>
 

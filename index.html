@@ -1,183 +1,96 @@
+<!-- index.html - DevOps Engineer Portfolio Website -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praveen Guntu | DevOps Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url('cool-sea-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #222;
-            text-align: center;
-            max-width: 100vw;
-            overflow-x: hidden;
-            position: relative;
-        }
-        body::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('devops-logo.png') no-repeat center center;
-            background-size: 150px;
-            opacity: 0.2;
-            z-index: 0;
-        }
-        header {
-            padding: 30px;
-            font-size: 26px;
-            position: relative;
-            color: #004d99;
-            z-index: 1;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            margin: 20px auto;
-            width: fit-content;
-            position: relative;
-            z-index: 1;
-        }
-        nav ul li {
-            margin: 10px;
-        }
-        nav ul li a {
-            color: #004d99;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-            color: #00264d;
-        }
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 80vh;
-            position: relative;
-            z-index: 1;
-        }
-        section {
-            width: 90%;
-            max-width: 800px;
-            padding: 40px;
-            margin: 20px auto;
-        }
-        h2 {
-            color: #004d99;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: transparent;
-            position: relative;
-            z-index: 1;
-            color: #004d99;
-        }
-        .resume-btn {
-            background: #004d99;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .resume-btn:hover {
-            background: #00264d;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Praveen Guntu</h1>
-        <p>DevOps Engineer | Kubernetes | CI/CD | Cloud | Automation</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a <strong>DevOps Engineer</strong> with <strong>5 years of experience</strong>, working on <strong>monolithic and microservices architectures</strong>. I specialize in <strong>Kubernetes, CI/CD automation, cloud infrastructure, and DevOps security</strong>.</p>
-            <a href="Praveen_Guntu_Resume.pdf" class="resume-btn" download>Download Resume</a>
-        </section>
-    
-        <section id="skills">
-            <h2>Skills & Technologies</h2>
-            <ul>
-                <li><strong>Languages:</strong> Java, Python, Node.js, React, PHP (Drupal), .NET</li>
-                <li><strong>CI/CD & Automation:</strong> Git, Jenkins, GitHub Actions, Azure DevOps, Bash scripting</li>
-                <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Helm, Istio, Nginx Ingress</li>
-            </ul>
-        </section>
-    
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Kubernetes Cluster Automation:</strong> Automated Kubernetes deployments using Helm and GitOps.</li>
-                <li><strong>CI/CD Pipeline for Microservices:</strong> Built end-to-end CI/CD pipelines for a microservices architecture.</li>
-                <li><strong>Cloud Cost Optimization:</strong> Implemented autoscaling and monitoring to reduce cloud infrastructure costs.</li>
-            </ul>
-        </section>
-    
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Certified Kubernetes Administrator (CKA)</li>
-                <li>AWS Certified Solutions Architect - Associate</li>
-                <li>Azure DevOps Engineer Expert</li>
-            </ul>
-        </section>
-    </main>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: praveenguntu@hotmail.com</p>
-        <p>GitHub: <a href="https://github.com/praveenjayakar" target="_blank">github.com/praveenjayakar</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/praveen-guntu-51163297" target="_blank">linkedin.com/in/praveen-guntu-51163297</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; <span id="year"></span> Praveen Guntu | DevOps Portfolio</p>
-    </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("year").textContent = new Date().getFullYear();
-            const navLinks = document.querySelectorAll("nav ul li a");
-            navLinks.forEach(link => {
-                link.addEventListener("click", function(event) {
-                    event.preventDefault();
-                    const section = document.querySelector(this.getAttribute("href"));
-                    section.scrollIntoView({ behavior: "smooth" });
-                });
-            });
-        });
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praveen Guntu | DevOps Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Praveen Guntu</h1>
+      <p>DevOps Engineer | Cloud | Kubernetes | CI/CD | Terraform</p>
+      <div class="contact">
+        <a href="mailto:praveenguntu@outlook.com">praveenguntu@outlook.com</a> | 
+        <a href="https://pjdevops.com" target="_blank">pjdevops.com</a> | 
+        <a href="https://linkedin.com/in/praveen-guntu-51163297" target="_blank">LinkedIn</a> | 
+        +91 6360192648
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Objective</h2>
+      <p>DevOps Engineer with 3+ years of experience in automating deployments, CI/CD pipelines, container orchestration, cloud infrastructure, observability, and legacy modernization. Skilled in delivering scalable, secure, and observable systems for monolithic and microservices architectures.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>CI/CD:</strong> Azure DevOps, Jenkins, Git, GitHub, Azure Repos, SonarQube, Trivy, Helm, Kubernetes manifests</li>
+        <li><strong>Containers:</strong> Docker, Kubernetes + Helm</li>
+        <li><strong>Databases:</strong> MySQL, Oracle, MongoDB, Redis</li>
+        <li><strong>Service Mesh:</strong> NGINX Ingress Controller, Istio</li>
+        <li><strong>Build Tools:</strong> Maven, Ant, Gradle, npm, MSBuild, pip, Composer, Docker buildx</li>
+        <li><strong>IaC:</strong> Terraform</li>
+        <li><strong>Registries:</strong> Nexus, JFrog, ECR</li>
+        <li><strong>Monitoring & Logging:</strong> Prometheus, Grafana, ELK, Fluentd, Loki, promtail, node exporter</li>
+        <li><strong>Config Management:</strong> Ansible</li>
+        <li><strong>Web Servers & OS:</strong> NGINX, Tomcat, Apache, Linux (advanced), Windows (intermediate)</li>
+        <li><strong>Scripting:</strong> Bash, Python (basic)</li>
+        <li><strong>Cloud:</strong> AWS (EC2, VPC, EKS, IAM, Route53, S3, Load Balancer, ACM, Secrets Manager, Auto Scaling)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <h3>DevOps Engineer – Jio Platforms, Bengaluru (Aug 2022 – Present)</h3>
+      <ul>
+        <li>Built and maintained CI/CD pipelines for 50+ microservices using Azure DevOps, Docker, Helm on Kubernetes (Kubeadm, EKS, AKS)</li>
+        <li>Implemented probes, resource limits, HPA for high availability deployments</li>
+        <li>Automated infrastructure using Terraform with S3 + DynamoDB locking</li>
+        <li>Setup observability using Prometheus, Grafana, ELK Stack, Fluentd, APM</li>
+        <li>Handled issues like image pull failures, misconfigured volumes, affinity rules</li>
+        <li>Managed TLS, NGINX routing, and reverse proxy with OpenSSL and certs</li>
+        <li>Supported legacy app CI/CD for .NET, PHP, Java on NGINX, Tomcat</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <h3>CI/CD Platform for Retail Microservices (CWMS)</h3>
+      <ul>
+        <li>Built GitOps pipelines with Helm and Docker multistage builds (Alpine/distroless)</li>
+        <li>Integrated SonarQube, Trivy for secure DevSecOps workflows</li>
+        <li>Managed Helm charts, ingress rules, TLS secrets, Istio gateway/virtual service</li>
+        <li>Enabled K8s dashboards and observability for developers</li>
+      </ul>
+
+      <h3>Legacy App Modernization – Partner Onboarding System</h3>
+      <ul>
+        <li>Migrated monoliths (.NET, Java, PHP) into Azure DevOps CI/CD flows</li>
+        <li>Automated VM deployments with environment variables & config separation</li>
+        <li>Enabled log monitoring and APM for performance analysis</li>
+        <li>Initiated containerization for Kubernetes transition</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Technology (B.Tech)</strong> — Computer Engineering (2020)<br>
+        Sanketika Institute of Technology and Management, Visakhapatnam</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💻 by Praveen Guntu | <a href="https://pjdevops.com">pjdevops.com</a></p>
+  </footer>
 </body>
+
 </html>

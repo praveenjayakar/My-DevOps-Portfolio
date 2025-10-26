@@ -14,12 +14,12 @@
   <header>
     <div class="container">
       <h1>Praveen Guntu</h1>
-      <p class="tagline">DevOps Engineer | Cloud | Kubernetes | CI/CD | Terraform</p>
+      <p class="tagline">DevOps Engineer | AWS Cloud | Kubernetes | CI/CD | Terraform | Observability</p>
       <div class="contact">
         <a href="mailto:praveenguntu@outlook.com">Email</a> |
         <a href="https://pjdevops.com" target="_blank">Portfolio</a> |
         <a href="https://linkedin.com/in/praveen-guntu-51163297" target="_blank">LinkedIn</a> |
-        +91 6360192648
+        +91 8919169146
       </div>
     </div>
   </header>
@@ -28,24 +28,23 @@
     <section>
       <h2>Objective</h2>
       <p>
-        DevOps Engineer with certain years of experience in automating deployments, CI/CD pipelines, container orchestration,
-        cloud infrastructure, observability, and legacy modernization. Skilled in delivering scalable, secure, and
-        observable systems for monolithic and microservices architectures.
+        DevOps Engineer with 3.3 years of experience in automating build and release processes, managing CI/CD pipelines, container orchestration with Kubernetes, and implementing infrastructure automation using Terraform. Skilled in observability, monitoring, and DevSecOps practices to enhance reliability, security, and performance across microservices and monolithic architectures in AWS and hybrid environments.
       </p>
     </section>
 
     <section>
       <h2>Skills</h2>
       <ul>
-        <li><strong>CI/CD:</strong> Azure DevOps, Jenkins, Git, GitHub, Azure Repos, SonarQube, Trivy, Helm</li>
-        <li><strong>Containers:</strong> Docker, Kubernetes (EKS, AKS, kubeadm), Helm, Kubernetes manifests</li>
-        <li><strong>Cloud:</strong> AWS (EC2, VPC, EKS, IAM, Route53, S3, Load Balancer, ACM, Secrets Manager, Auto Scaling)</li>
-        <li><strong>IaC & Config Mgmt:</strong> Terraform, Ansible</li>
-        <li><strong>Monitoring:</strong> Prometheus, Grafana, Fluentd, Loki, ELK Stack, APM</li>
-        <li><strong>Build Tools:</strong> Maven, Gradle, Ant, pip, npm, Composer, Docker buildx</li>
-        <li><strong>Service Mesh:</strong> Istio, NGINX Ingress Controller</li>
+        <li><strong>CI/CD & Version Control:</strong> Azure DevOps, Jenkins, GitHub Actions, GitLab CI, Git, Azure Repos, SonarQube, Trivy</li>
+        <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes (EKS, AKS, kubeadm), Helm, Istio, NGINX Ingress, Kubernetes manifests</li>
+        <li><strong>Cloud:</strong> AWS (EC2, VPC, Public/Private Subnets, Route53, S3, Load Balancer, ACM, Secrets Manager, Auto Scaling, EBS, EFS), Azure (AKS, App Services, Storage, Networking)</li>
+        <li><strong>Infrastructure as Code:</strong> Terraform (modules, S3 backend, remote state), Ansible</li>
+        <li><strong>Monitoring & Observability:</strong> Prometheus, Grafana, ELK Stack, Fluentd, Loki, Promtail, Elastic APM, Kubernetes Dashboard</li>
+        <li><strong>Build & Dependency Management:</strong> Maven, Gradle, Ant, pip, npm, Composer, Docker Buildx</li>
+        <li><strong>Service Mesh & Networking:</strong> Istio, NGINX Ingress, Load Balancers, TLS/SSL, Security Groups</li>
         <li><strong>Databases:</strong> MySQL, Oracle, MongoDB, Redis</li>
-        <li><strong>Other:</strong> Linux, Windows, Bash, basic Python, NGINX, Tomcat, Apache</li>
+        <li><strong>OS & Scripting:</strong> Linux (RHEL, Ubuntu, CentOS), Windows, Bash, Shell, Python, PowerShell</li>
+        <li><strong>Web Servers:</strong> Apache HTTPD, NGINX, Tomcat</li>
       </ul>
     </section>
 
@@ -53,37 +52,54 @@
       <h2>Experience</h2>
       <h3>DevOps Engineer – Jio Platforms, Bengaluru (Aug 2022 – Present)</h3>
       <ul>
-        <li>Built and maintained CI/CD pipelines for 50+ microservices using Azure DevOps, Docker, Helm, and Kubernetes (EKS, AKS, kubeadm).</li>
-        <li>Automated infrastructure using Terraform (S3 + DynamoDB for remote state locking).</li>
-        <li>Integrated observability with Prometheus, Grafana, ELK, Fluentd, and APM tools.</li>
-        <li>Managed SSL/TLS termination, reverse proxy setup using NGINX, Istio gateways.</li>
-        <li>Handled production issues like image pull failures, node scheduling, and pod disruptions.</li>
-        <li>Supported legacy monoliths in .NET, PHP, Java with CI/CD using Bash, PowerShell, Python scripts.</li>
+        <li>Built and maintained CI/CD pipelines for 50+ microservices using Azure DevOps, Jenkins, Docker, Helm, and Kubernetes (EKS, AKS, kubeadm), integrating security scanning and compliance checks (Trivy, SonarQube, Aqua).</li>
+        <li>Managed hybrid Kubernetes deployments, implementing RBAC, TLS encryption, Istio mTLS, VirtualGateways, VirtualServices, and NGINX Ingress objects to route traffic securely and strengthen cluster security.</li>
+        <li>Automated AWS infrastructure provisioning with Terraform, leveraging reusable modules, remote backend, and CI/CD pipelines.</li>
+        <li>Integrated observability using Prometheus, Grafana, ELK, Fluentd, Loki, Promtail, Elastic APM, and Kubernetes dashboards to provide developers self-service access for troubleshooting, performance tracing, and root cause analysis.</li>
+        <li>Applied containerization best practices with Docker and Helm using multi-stage builds, Alpine/Distroless base images, non-root users, RBAC, and vulnerability scanning.</li>
+        <li>Implemented Blue/Green, Canary, and Rolling deployment strategies across monolith and microservice applications (.NET, Java, PHP, Node.js, React, Python).</li>
+        <li>Managed SSL/TLS termination, reverse proxies, and web servers (NGINX, Apache, Tomcat) for secure application delivery.</li>
+        <li>Worked with dev teams to implement Kubernetes readiness/liveness probes and resource limits to prevent pod resource overconsumption.</li>
       </ul>
     </section>
 
     <section>
       <h2>Projects</h2>
+      
       <h3>CI/CD Platform for Retail Microservices (CWMS)</h3>
       <ul>
-        <li>Designed and deployed GitOps-based CI/CD pipelines with Helm, Azure DevOps, and multistage Docker builds using Alpine & distroless images.</li>
-        <li>Enforced DevSecOps with SonarQube and Trivy scanning, used JFrog for artifact versioning and rollback.</li>
-        <li>Created shared Helm charts, ingress rules, and Istio gateway configurations to standardize deployments across environments.</li>
-        <li>Provided seamless observability using dashboards for developer self-service access to logs and metrics.</li>
+        <li>Designed GitOps-based CI/CD pipelines for dev, QA, and production using Azure DevOps, Helm, and Docker multi-stage builds with Alpine and Distroless images.</li>
+        <li>Applied DevSecOps practices including SonarQube code analysis, Trivy vulnerability scanning, and JFrog Artifactory for artifact versioning and rollbacks.</li>
+        <li>Created reusable Helm charts, ingress rules, and Istio gateway configurations to standardize deployments across environments.</li>
+        <li>Provided developer self-service dashboards using Grafana, Kibana, and Kubernetes Dashboard for logs, metrics, and troubleshooting.</li>
+        <li>Accelerated CI/CD builds by 60% using Docker layer caching separating dependencies from application code.</li>
       </ul>
 
       <h3>Legacy App Modernization – Partner Onboarding System</h3>
       <ul>
-        <li>Re-engineered monolithic Java, .NET, and PHP apps into automated Azure DevOps CI/CD pipelines.</li>
-        <li>Enabled deployments across Linux and Windows VMs, with environment-aware scripting.</li>
-        <li>Integrated ELK stack for logging and performance tracking; initiated containerization for Kubernetes migration.</li>
-        <li>Reduced deployment time by 80% and improved system reliability and visibility significantly.</li>
+        <li>Modernized monolithic Java, .NET, and PHP apps with automated Azure DevOps CI/CD pipelines across Linux and Windows VMs.</li>
+        <li>Implemented configuration-driven deployments with environment-specific parameters, secrets, and automation scripts.</li>
+        <li>Integrated ELK and APM for centralized logging, tracing, and performance insights.</li>
+        <li>Deployed and configured Apache, NGINX, and Tomcat servers with non-root privileges ensuring secure hosting of web applications.</li>
+      </ul>
+
+      <h3>Project Learn – X (AWS Multi-Tier Infrastructure)</h3>
+      <ul>
+        <li>Designed and deployed multi-tier AWS infrastructure across Dev and UAT environments using Terraform and AWS services.</li>
+        <li>Configured VPCs with public/private subnets, Internet & NAT Gateways, Route53 hosted zones, and Security Groups for secure access.</li>
+        <li>Deployed EC2 instances using Launch Templates and Auto Scaling Groups for high availability and scalability.</li>
+        <li>Attached and managed EBS volumes for persistent storage and configured EFS/NFS for shared access across instances.</li>
+        <li>Implemented Application Load Balancers for routing traffic to backend instances in private subnets across multiple AZs.</li>
+        <li>Created and managed S3 buckets with versioning, lifecycle policies, and encryption (SSE-S3 & KMS) for secure storage.</li>
+        <li>Applied Infrastructure as Code best practices with reusable Terraform modules, remote backends, and CI/CD-driven automated apply workflows.</li>
+        <li>Executed Blue/Green and Canary deployments using ALB target group shifting.</li>
+        <li>Optimized cost and performance via scheduled non-production EC2 start/stop automation using Lambda and CloudWatch Events.</li>
       </ul>
     </section>
 
     <section>
       <h2>Education</h2>
-      <p><strong>Bachelor of Technology (B.Tech)</strong> — Computer Engineering (2020)<br />
+      <p><strong>Bachelor of Technology (B.Tech)</strong> — Civil Engineering (2020)<br />
         Sanketika Institute of Technology and Management, Visakhapatnam</p>
     </section>
   </main>
